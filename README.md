@@ -2,6 +2,33 @@
 ### 描述
 基于go语言的命令行工具，根据输入提示可执行程序的帮助信息，适合用于复杂业务的脚本辅助
 
+### 使用效果
+```
+$ ./test help
+commands server - connect everysites!
+
+Usage:
+
+    test command [arguments]
+
+The commands are:
+
+    cmd1        example server
+    server      server http
+
+Use "test help [command]" for more information about a command.
+
+$ ./test help cmd1
+usage: test cmd1 [jackma | ponyma | start]
+
+        jackma              i am jackma.
+        ponyma              i am ponyma.
+        start               start the server.
+
+$ ./test cmd1 jackma
+悔创阿里杰克马
+```
+
 ### 如何使用
 ```
 package main
