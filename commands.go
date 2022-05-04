@@ -9,6 +9,8 @@ import (
 	"text/template"
 )
 
+type ABC struct {
+}
 type Commands struct {
 	CommandList []*Command
 	ApiName     string
